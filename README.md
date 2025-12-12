@@ -1,6 +1,6 @@
 # Bug Tester Project
 
-This project contains a collection of common and challenging code bugs in Java and Go languages, designed for testing bug detection capabilities of various AI models and static analysis tools.
+This project contains a collection of common and challenging code bugs in Java, Go, and JavaScript languages, designed for testing bug detection capabilities of various AI models and static analysis tools.
 
 ## Project Structure
 
@@ -29,8 +29,20 @@ bug-bot-tester/
 │   ├── map_access.go
 │   ├── integer_overflow.go
 │   └── unsafe_concurrency.go
+├── js-bugs/            # JavaScript bug examples
+│   ├── null_undefined_bug.js
+│   ├── type_coercion_bug.js
+│   ├── async_callback_bug.js
+│   ├── closure_bug.js
+│   ├── this_binding_bug.js
+│   ├── prototype_bug.js
+│   ├── array_mutation_bug.js
+│   ├── memory_leak_bug.js
+│   ├── race_condition_bug.js
+│   └── injection_bug.js
 ├── pom.xml            # Maven configuration for Java
 ├── go.mod             # Go module definition
+├── package.json       # Node.js package configuration
 └── README.md          # This file
 ```
 
@@ -91,6 +103,33 @@ go build race_condition.go
 ./race_condition
 ```
 
+## JavaScript Bug Examples
+
+The JavaScript directory contains 10 common and challenging bugs:
+
+1. **null_undefined_bug**: Null and undefined reference errors
+2. **type_coercion_bug**: Type coercion and comparison issues
+3. **async_callback_bug**: Callback hell and async error handling
+4. **closure_bug**: Closure variable capture issues in loops
+5. **this_binding_bug**: Context binding problems with `this`
+6. **prototype_bug**: Prototype chain and shared property issues
+7. **array_mutation_bug**: Array mutation during iteration
+8. **memory_leak_bug**: Event listener memory leaks
+9. **race_condition_bug**: Race conditions with Promises and async code
+10. **injection_bug**: XSS and SQL injection vulnerabilities
+
+### Running JavaScript Examples
+
+```bash
+# Run individual examples
+node js-bugs/null_undefined_bug.js
+node js-bugs/type_coercion_bug.js
+# ... etc
+
+# Run all examples
+npm run run:all
+```
+
 ## Testing Methodology
 
 This project is designed to test:
@@ -98,7 +137,7 @@ This project is designed to test:
 1. **AI Model Bug Detection**: How well AI models can identify and explain bugs
 2. **Static Analysis Tools**: Effectiveness of automated code analysis tools
 3. **Code Review Skills**: Human ability to spot subtle bugs in code
-4. **Language-Specific Issues**: Bug patterns unique to Java and Go
+4. **Language-Specific Issues**: Bug patterns unique to Java, Go, and JavaScript
 
 ## Contributing
 

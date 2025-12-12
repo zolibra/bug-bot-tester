@@ -1,0 +1,18 @@
+{
+  "name": "bug-bot-tester-js",
+  "version": "1.0.0",
+  "description": "JavaScript bug examples for testing bug detection capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node js-bugs/null_undefined_bug.js && node js-bugs/type_coercion_bug.js",
+    "run:all": "for file in js-bugs/*.js; do echo \"\\n=== Running $file ===\"; node \"$file\"; done"
+  },
+  "keywords": [
+    "bugs",
+    "testing",
+    "javascript",
+    "code-quality"
+  ],
+  "author": "",
+  "license": "MIT"
+}
