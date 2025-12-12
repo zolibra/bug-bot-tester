@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "node js-bugs/null_undefined_bug.js && node js-bugs/type_coercion_bug.js",
-    "run:all": "for file in js-bugs/*.js; do echo \"\\n=== Running $file ===\"; node \"$file\"; done"
+    "run:null": "node js-bugs/null_undefined_bug.js",
+    "run:type": "node js-bugs/type_coercion_bug.js",
+    "run:async": "node js-bugs/async_callback_bug.js",
+    "run:closure": "node js-bugs/closure_bug.js",
+    "run:this": "node js-bugs/this_binding_bug.js",
+    "run:prototype": "node js-bugs/prototype_bug.js",
+    "run:array": "node js-bugs/array_mutation_bug.js",
+    "run:memory": "node js-bugs/memory_leak_bug.js",
+    "run:race": "node js-bugs/race_condition_bug.js",
+    "run:injection": "node js-bugs/injection_bug.js"
   },
   "keywords": [
     "bugs",

@@ -121,13 +121,16 @@ The JavaScript directory contains 10 common and challenging bugs:
 ### Running JavaScript Examples
 
 ```bash
-# Run individual examples
+# Run individual examples using npm scripts
+npm run run:null
+npm run run:type
+npm run run:async
+# ... etc
+
+# Or run directly with node
 node js-bugs/null_undefined_bug.js
 node js-bugs/type_coercion_bug.js
 # ... etc
-
-# Run all examples
-npm run run:all
 ```
 
 ## Testing Methodology

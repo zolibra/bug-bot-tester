@@ -26,7 +26,7 @@ function buildQuery(username, password) {
 }
 
 function buildQuerySafe(username, password) {
-    // Safe: using parameterized query (示例)
+    // Safe: using parameterized query (example)
     // In real code, use prepared statements
     const sanitized = {
         username: username.replace(/'/g, "''"),

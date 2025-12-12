@@ -1,6 +1,7 @@
 // Type Coercion Bug
 
 function isValidNumber(value) {
+    // Bug: using == causes type coercion issues
     if (value == 0) {
         return false;
     }
@@ -8,10 +9,11 @@ function isValidNumber(value) {
 }
 
 function isValidNumberSafe(value) {
-    if (value === 0) {
+    // Safe: using === for strict comparison and proper validation
+    if (typeof value !== 'number') {
         return false;
     }
-    return value !== null && value !== undefined && value !== '';
+    return value === 0 || value !== 0; // Returns true for all numbers including 0
 }
 
 // Demonstrate the bug
